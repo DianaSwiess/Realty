@@ -1,0 +1,70 @@
+<mat-toolbar color="primary">
+    <div class="menu">
+        <button mat-button [matMenuTriggerFor]="beforeMenu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #beforeMenu="matMenu" xPosition="before">
+            <button mat-menu-item><a routerLink="/">
+                    <h2>HOME</h2>
+                </a></button>
+            <button mat-menu-item><a routerLink="/about">
+                    <h2>ABOUT US</h2>
+                </a></button>
+            <button mat-menu-item><a routerLink="/contact">
+                    <h2>CONTACT</h2>
+                </a></button>
+            <button mat-menu-item><a routerLink="/rent">
+                    <h2>RENT</h2>
+                </a></button>
+            <button mat-menu-item><a routerLink="/buy">
+                    <h2>Buy</h2>
+                </a></button>
+             <button mat-menu-item><a routerLink="/sell">
+            <h2>Sell</h2>
+          </a></button>
+        </mat-menu>
+    </div>
+    <div class="logo"><img src="assets/img/logo.JPG">
+    </div>
+    <menu>
+        <button mat-button>
+            <a routerLink="/">
+                <h2>HOME</h2>
+            </a></button>
+        <mat-menu #menu="matMenu">
+        </mat-menu>
+        <button mat-button>
+            <a routerLink="/contact">
+                <h2>CONTACT</h2>
+            </a></button>
+        <mat-menu #menu="matMenu">
+        </mat-menu>
+        <button mat-button>
+            <a routerLink="/about">
+                <h2>ABOUT US</h2>
+            </a></button>
+        <mat-menu #menu="matMenu">
+        </mat-menu>
+        <button mat-button>
+            <a routerLink="/rent">
+                <h2>Rent</h2>
+            </a></button>
+        <mat-menu #menu="matMenu">
+        </mat-menu>
+        <button mat-button>
+            <a routerLink="/buy">
+                <h2>BUY</h2>
+            </a></button>
+        <button mat-button>
+          <a routerLink="/sell">
+            <h2>SELL</h2>
+              </a></button>
+        <mat-menu #menu="matMenu">
+        </mat-menu>
+    </menu>
+
+</mat-toolbar>
+
+
+
+
